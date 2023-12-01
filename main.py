@@ -1,12 +1,11 @@
-from http.server import HTTPServer, BaseHTTPRequestHandler
-from datetime import datetime
-
-import urllib.parse
+import json
 import mimetypes
 import pathlib
 import socket
-import json
 import threading
+import urllib.parse
+from datetime import datetime
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 UDP_IP = "127.0.0.1"
 UDP_PORT = 5000

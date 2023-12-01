@@ -8,7 +8,7 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-RUN python3 pre_start.py
+RUN mkdir -p storage && touch storage/data.json
 
 EXPOSE 5000
 

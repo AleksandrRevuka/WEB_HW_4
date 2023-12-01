@@ -1,5 +1,6 @@
 import os
 
+
 def chack_file():
     if not os.path.isfile("/app/storage/data.json"):
         with open("/app/storage/data.json", "x"):
